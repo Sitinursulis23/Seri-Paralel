@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+float jumlah_seri = 0;
+int nilai_seri1 = 0;
+int nilai_seri2 = 0;
+int nilai_seri3 = 0;
+float jumlah_pararel = 0;
+int nilai_pararel1 = 0;
+int nilai_pararel2 = 0;
+int nilai_pararel3 = 0;
+int pararel = 0;
+resistor_seri (int a, int aa, int aaa){
+	int seri;
+	seri = a+aa+aaa;
+	return seri;
+}
+resistor_pararel (int b, int bb, int bbb){
+	int pararel, p1, p2, p3, i, hasil;
+	p1 = i/b*1;
+	p2 = i/bb*1;
+	p3 = i/bbb*1;
+	pararel = p1 + p2 + p3;
+	hasil = pararel/i;
+	return pararel;
+}
+int main ()
+{
+	int a1,a2,a3,p1,p2,p3;
+	cout<<"cara Menghitung 3 nilai hambatan pada resistor seri, dan resistor pararel"<<endl;
+	cout<<"1. Resistor seri"<<endl;
+	cout<<"Masukkan nilai resistor 1 = ";
+	cin>>nilai_seri1;
+	cout<<"Masukkan nilai resistor 2 = ";
+	cin>>nilai_seri2;
+	cout<<"Masukkan nilai resistor 3 = ";
+	cin>>nilai_seri3;
+	jumlah_seri = resistor_seri (nilai_seri1, nilai_seri2, nilai_seri3);
+	cout<<endl;
+	cout<<nilai_seri1<<" + "<<nilai_seri2<<" + "<<nilai_seri3<<" = "<<jumlah_seri<<endl<<endl;
+	cout<<"2. Resistor Pararel"<<endl;
+	cout<<"Masukkan nilai resistor 1 = ";
+	cin>>nilai_pararel1;
+	cout<<"Masukkan nilai resistor 2 = ";
+	cin>>nilai_pararel2;
+	cout<<"Masukkan nilai resistor 3 = ";
+	cin>>nilai_pararel3;
+
+	return 0;
+}
+		
+	
+	
